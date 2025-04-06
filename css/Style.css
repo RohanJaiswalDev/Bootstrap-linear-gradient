@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-custom-bg {
+    background: #ffffff70;
+    backdrop-filter: blur(20px);
+}
+
+nav {
+    z-index: 999 !important;
+}
+
+nav ul li a {
+    font-size: 18px !important;
+}
+
+#about {
+    padding-top: 100px;
+    min-height: 100vh;
+    background: linear-gradient(103deg, #fdbf6d, #7c9cc3, #b16edf);
+}
+
+.about-card-hover {
+    transition: 0.2s ease-in-out;
+}
+
+.about-card-hover:hover {
+    transform: translateY(-10px);
+}
+
+#integration {
+    padding-top: 100px;
+    min-height: 100vh;
+    background: linear-gradient(103deg, #9ef47d, #8c54db, #db5eba);
+}
+
+.track a:hover {
+    transform: scale(1.06);
+}
+
+.track-2 a:hover {
+    transform: scale(1.06);
+}
+
+#faq {
+    padding-bottom: 50px;
+    padding-top: 80px;
+    min-height: 100vh;
+    background: linear-gradient(200deg, #8662a5, #9327ba, #c12727);
+}
+
+.accordion p {
+    font-size: 1rem;
+}
+
+#contact {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: linear-gradient(190deg, #48a787, #892d77, #966a30);
+}
+
+.custom-bg {
+    color: #fff;
+    background: linear-gradient(190deg, #48a787, #892d77, #966a30);
+}
+
+#footer {
+    color: #fff;
+    background: #324964;
+    padding: 3rem;
+}
+
+#footer h2 {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+
+    #about,
+    #integration,
+    #contact {
+        padding-top: 80px;
+    }
+
+    .navbar-brand h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    #about,
+    #integration,
+    #contact {
+        padding-top: 70px;
+    }
+
+    .navbar-collapse {
+        background: #ffffff90;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        gap: 10px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    #about,
+    #integration,
+    #contact {
+        padding-top: 60px;
+    }
+
+    .about-card-hover {
+        margin-bottom: 15px;
+    }
+
+    .track a,
+    .track-2 a {
+        margin-bottom: 8px !important;
+    }
+
+    .btn-logo span:last-child {
+        display: none !important;
+    }
+
+    .marquee {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .track {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .footer-ul {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    #about,
+    #integration,
+    #contact {
+        padding-top: 60px;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn-success,
+    .btn-dark {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+}
+
+.track {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
